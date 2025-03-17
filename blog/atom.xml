@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog</title>
+  <updated>2025-03-17T20:34:14.307623+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2024-06-14-project-pythia-mystmd/</id>
+    <title>Project Pythia Hackathon: Transitioning from JupyterBook to MyST Markdown</title>
+    <updated>2024-06-14T00:00:00+02:00</updated>
+    <author>
+      <name>Executable Books; 2i2c)</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This last week members of the ExecutableBooks team attended the Pythia Cook-off 2024 hackathon to help support and introduce &lt;a class="reference external" href="https://mystmd.org"&gt;MyST Markdown&lt;/a&gt; as the next generation infrastructure being used for Jupyter Book v2.&lt;/p&gt;
+&lt;p&gt;Project Pythia serves as an education and training hub for the geoscientific Python community, acting as the educational wing of the &lt;a class="reference external" href="https://pangeo.io/"&gt;Pangeo&lt;/a&gt; initiative. It provides an extensive range of Python-centered learning resources that are open-source, community-owned, geoscience-focused, and of exceptional quality. These resources and tutorials or “Cookbooks” offer ways to onboard into the geoscientific Python ecosystem and demonstrate ways to process and understand vast amounts of numerical scientific data using tools that support open, reproducible science, while fostering an inclusive community of practice. The Project Pythia technical stack has been based on Jupyter Book, whose next release is undergoing significant development at the moment through the mystmd project. Members of the MyST team attended the hackathon and helped with onboarding, development of new features, and bug fixes throughout the week. It was an exciting event that showcased the power of the new tools that we aim to capture in this post.&lt;/p&gt;
+&lt;img alt="blog/images/pythia-jb-myst.png" src="blog/images/pythia-jb-myst.png" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2024-06-14-project-pythia-mystmd/"/>
+    <summary>This last week members of the ExecutableBooks team attended the Pythia Cook-off 2024 hackathon to help support and introduce MyST Markdown as the next generation infrastructure being used for Jupyter Book v2.Project Pythia serves as an education and training hub for the geoscientific Python community, acting as the educational wing of the Pangeo initiative. It provides an extensive range of Python-centered learning resources that are open-source, community-owned, geoscience-focused, and of exceptional quality. These resources and tutorials or “Cookbooks” offer ways to onboard into the geoscientific Python ecosystem and demonstrate ways to process and understand vast amounts of numerical scientific data using tools that support open, reproducible science, while fostering an inclusive community of practice. The Project Pythia technical stack has been based on Jupyter Book, whose next release is undergoing significant development at the moment through the mystmd project. Members of the MyST team attended the hackathon and helped with onboarding, development of new features, and bug fixes throughout the week. It was an exciting event that showcased the power of the new tools that we aim to capture in this post.</summary>
+    <published>2024-06-14T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2024-05-20-jupyter-book-myst/</id>
+    <title>Towards Jupyter Book 2 with MyST-MD</title>
+    <updated>2024-05-19T00:00:00+02:00</updated>
+    <author>
+      <name>Chris Holdgraf</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Over &lt;a class="reference external" href="https://executablebooks.org/en/latest/blog/2020-02-25-hello-world/"&gt;the past four years&lt;/a&gt;, the &lt;a class="reference external" href="https://executablebooks.org"&gt;Executable Book(s)&lt;/a&gt; (EB) project has been working to &lt;em&gt;improve workflows for writing and publishing with Jupyter Notebooks, along with the broader open source science ecosystem.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Within this collaboration, much of the development effort has been spent on building &lt;a class="reference external" href="https://jupyterbook.org/"&gt;Jupyter Book&lt;/a&gt;, &lt;a class="reference external" href="https://executablebooks.org/en/latest/blog/2023/new-project-members/"&gt;which has been a tremendous success&lt;/a&gt;; there are at least 13,209 GitHub repositories using the tool according to the &lt;a class="reference external" href="https://github.com/executablebooks/jupyter-book/network/dependents"&gt;dependency graph for the project&lt;/a&gt;.&lt;a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; Furthermore, the reach of EB has grown to encompass documentation writers and package authors who use EB tools to provide a richer experience for their audiences. For example, six of the flagship scientific python projects&lt;a class="footnote-reference brackets" href="#scipy" id="id2" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;3&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; like &lt;a class="reference external" href="https://numpy.org/doc/stable/"&gt;NumPy&lt;/a&gt;, &lt;a class="reference external" href="https://pandas.pydata.org/docs/"&gt;Pandas&lt;/a&gt;, and &lt;a class="reference external" href="https://docs.dask.org/en/stable/"&gt;Dask&lt;/a&gt; make use of at least one of the Sphinx-based tools we’ve developed such as the &lt;a class="reference external" href="http://pydata-sphinx-theme.readthedocs.io"&gt;PyData Sphinx Theme&lt;/a&gt;, the &lt;a class="reference external" href="http://sphinx-book-theme.readthedocs.io"&gt;Sphinx Book Theme&lt;/a&gt;, &lt;a class="reference external" href="https://myst-parser.readthedocs.io"&gt;MyST Markdown parser&lt;/a&gt;, or the &lt;a class="reference external" href="https://myst-nb.readthedocs.io"&gt;Jupyter Notebook parser&lt;/a&gt;.&lt;a class="footnote-reference brackets" href="#popular" id="id3" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;4&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2024-05-20-jupyter-book-myst/"/>
+    <summary>Over the past four years, the Executable Book(s) (EB) project has been working to improve workflows for writing and publishing with Jupyter Notebooks, along with the broader open source science ecosystem.Within this collaboration, much of the development effort has been spent on building Jupyter Book, which has been a tremendous success; there are at least 13,209 GitHub repositories using the tool according to the dependency graph for the project.1 Furthermore, the reach of EB has grown to encompass documentation writers and package authors who use EB tools to provide a richer experience for their audiences. For example, six of the flagship scientific python projects3 like NumPy, Pandas, and Dask make use of at least one of the Sphinx-based tools we’ve developed such as the PyData Sphinx Theme, the Sphinx Book Theme, MyST Markdown parser, or the Jupyter Notebook parser.4</summary>
+    <published>2024-05-19T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023/new-project-members/</id>
+    <title>Expanding our team and the next phase of Executable Books development</title>
+    <updated>2023-11-28T00:00:00+01:00</updated>
+    <author>
+      <name>Chris Holdgraf</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Over the past three years, the Executable Books team has focused its efforts on building a Sphinx-based technical stack underlying the Jupyter Book project. This has been extremely successful, and Jupyter Book and the associated MyST ecosystem in Sphinx have gained adoption across both scientific and open source communities. The MyST Parser for Sphinx averages around 350,000 downloads a month, which makes up about 13% of all Sphinx downloads (&lt;a class="reference external" href="https://www.pepy.tech/projects/myst-parser?versions=*"&gt;https://www.pepy.tech/projects/myst-parser?versions=*&lt;/a&gt;). There are over 4000 Jupyter Books in public GitHub repositories (&lt;a class="reference external" href="https://github.com/search?q=%22format%3A+jb-book%22&amp;amp;amp;type=code"&gt;https://github.com/search?q=%22format%3A+jb-book%22&amp;amp;type=code&lt;/a&gt;), many of which are now featured at &lt;a class="reference external" href="https://executablebooks.org/en/latest/gallery/"&gt;gallery.executablebooks.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Stargazer counts over time for Jupyter Book and MyST Parser" src="blog/images/grant-star-timeline.png" /&gt;&lt;/p&gt;
+&lt;img alt="Stargazer counts over time for Jupyter Book and MyST Parser" src="blog/images/grant-star-timeline.png" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023/new-project-members/"/>
+    <summary>Over the past three years, the Executable Books team has focused its efforts on building a Sphinx-based technical stack underlying the Jupyter Book project. This has been extremely successful, and Jupyter Book and the associated MyST ecosystem in Sphinx have gained adoption across both scientific and open source communities. The MyST Parser for Sphinx averages around 350,000 downloads a month, which makes up about 13% of all Sphinx downloads (https://www.pepy.tech/projects/myst-parser?versions=*). There are over 4000 Jupyter Books in public GitHub repositories (https://github.com/search?q=%22format%3A+jb-book%22&amp;type=code), many of which are now featured at gallery.executablebooks.org.Stargazer counts over time for Jupyter Book and MyST ParserStargazer counts over time for Jupyter Book and MyST Parser</summary>
+    <published>2023-11-28T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/</id>
+    <title>Using MyST Markdown in JupyterLab</title>
+    <updated>2023-06-26T00:00:00+02:00</updated>
+    <author>
+      <name>Steve Purves</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Join the upcoming webinar (5th July 2023 &amp;#64; 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp;amp; Steve from &lt;a class="reference external" href="https://curvenote.com"&gt;Curvenote&lt;/a&gt;, and will be an hour walk-through of using &lt;a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst"&gt;MyST in JupyterLab&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.eventbrite.ca/e/scientific-writing-in-jupyterlab-with-myst-markdown-tickets-666670598707"&gt;Sign up for the webinar&lt;/a&gt; or &lt;a class="reference external" href="https://www.youtube.com/watch?v=F3st8X0L1Ys"&gt;watch the recording on YouTube&lt;/a&gt; after.&lt;/p&gt;
+&lt;img alt="blog/images/jupyterlab-myst.png" src="blog/images/jupyterlab-myst.png" style="width: 100%;" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/"/>
+    <summary>Join the upcoming webinar (5th July 2023 @ 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp; Steve from Curvenote, and will be an hour walk-through of using MyST in JupyterLab.Sign up for the webinar or watch the recording on YouTube after.</summary>
+    <published>2023-06-26T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-03-07-call-for-myst-templates/</id>
+    <title>Call for MyST Templates for Open Science</title>
+    <updated>2023-03-07T00:00:00+01:00</updated>
+    <author>
+      <name>Steve Purves</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Interested in porting your first LaTeX template to a MyST template? Join the upcoming webinar (15th March 2023 &amp;#64; 4pm UTC) and get started (and maybe finished) building your template during the session.&lt;/p&gt;
+&lt;p&gt;The webinar is hosted by Rowan &amp;amp; Steve from Curvenote, and will be a 2 hour walk-through at an easy pace of how to markup an existing LaTeX template or document for use with the &lt;a class="reference external" href="https://mystmd.org"&gt;MyST Markdown&lt;/a&gt; CLI.&lt;/p&gt;
+&lt;img alt="blog/images/myst-export-to-any-template.png" src="blog/images/myst-export-to-any-template.png" style="width: 100%;" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-03-07-call-for-myst-templates/"/>
+    <summary>Interested in porting your first LaTeX template to a MyST template? Join the upcoming webinar (15th March 2023 @ 4pm UTC) and get started (and maybe finished) building your template during the session.The webinar is hosted by Rowan &amp; Steve from Curvenote, and will be a 2 hour walk-through at an easy pace of how to markup an existing LaTeX template or document for use with the MyST Markdown CLI.</summary>
+    <published>2023-03-07T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-02-09-announce-mystjs/</id>
+    <title>Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter</title>
+    <updated>2023-02-09T00:00:00+01:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives.
+It was created for &lt;a class="reference external" href="https://jupyterbook.org"&gt;Jupyter Book&lt;/a&gt;, and has gained wide adoption in Python’s &lt;a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/sphinx/intro.html"&gt;Sphinx documentation ecosystem&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-02-09-announce-mystjs/"/>
+    <summary>MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives.
+It was created for Jupyter Book, and has gained wide adoption in Python’s Sphinx documentation ecosystem.</summary>
+    <published>2023-02-09T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2022-11-16-project-update/</id>
+    <title>Executable Books Update (October 2022)</title>
+    <updated>2022-11-16T00:00:00+01:00</updated>
+    <author>
+      <name>Matt McKay</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan Foundation. It shares how the project has been progressing relative to the initial grant success metrics, and concludes with a few comments about the future of Executable Books and our vision for the next 12 months.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2022-11-16-project-update/"/>
+    <summary>This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan Foundation. It shares how the project has been progressing relative to the initial grant success metrics, and concludes with a few comments about the future of Executable Books and our vision for the next 12 months.</summary>
+    <published>2022-11-16T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2021-12-18-agu-2021/</id>
+    <title>Jupyter Book and MyST at AGU 2021</title>
+    <updated>2021-12-18T00:00:00+01:00</updated>
+    <author>
+      <name>Chris Holdgraf</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;The &lt;a class="reference external" href="https://www.agu.org/Fall-Meeting"&gt;AGU 2021 conference&lt;/a&gt; just wrapped up, and Jupyter Book made a few appearances at the conference this year.
+Below are a few links to videos and Google Slides for each session.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2021-12-18-agu-2021/"/>
+    <summary>The AGU 2021 conference just wrapped up, and Jupyter Book made a few appearances at the conference this year.
+Below are a few links to videos and Google Slides for each session.</summary>
+    <published>2021-12-18T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2021-06-18-update-toc/</id>
+    <title>Migrate your old Table of Contents to the new TOC structure</title>
+    <updated>2021-06-17T00:00:00+02:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;In Jupyter Book v0.11, we &lt;a class="reference external" href="https://jupyterbook.org/reference/_changelog.html#v0-11-0"&gt;introduced a new Table of Contents&lt;/a&gt; structure.
+The new structure is a bit more rigid and explicit, which should allow for a cleaner mapping of TOC structures onto book structures.
+It also introduces the concept of TOC &lt;strong&gt;formats&lt;/strong&gt;, which allows you to specify different &lt;em&gt;kinds&lt;/em&gt; of documents in the TOC (to start with, Books and Articles).&lt;/p&gt;
+&lt;p&gt;This is a short guide to explain the differences between the old and new Table of Contents structures, to help you update them.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2021-06-18-update-toc/"/>
+    <summary>In Jupyter Book v0.11, we introduced a new Table of Contents structure.
+The new structure is a bit more rigid and explicit, which should allow for a cleaner mapping of TOC structures onto book structures.
+It also introduces the concept of TOC formats, which allows you to specify different kinds of documents in the TOC (to start with, Books and Articles).This is a short guide to explain the differences between the old and new Table of Contents structures, to help you update them.</summary>
+    <published>2021-06-17T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2021-06-5-release-jb-v0.11.1/</id>
+    <title>🚀 RELEASE: Jupyter Book v0.11.1</title>
+    <updated>2021-06-05T00:00:00+02:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This is an experimental post to try solving two problems with one blog post.
+We often send out a flurry of tweets to talk about a new release in the Executable Books stack.
+We’d also like to blog about releases more often so it’s easier to track major updates.
+This post is an attempt at crafting a blog post entirely made out of tweets!&lt;/p&gt;
+&lt;p&gt;We’re pleased to announce a new version of Jupyter Book has just been released! You can check out the CHANGELOG here: &lt;a class="reference external" href="https://jupyterbook.org/reference/_changelog.html#v0-11-0"&gt;https://jupyterbook.org/reference/_changelog.html#v0-11-0&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="https://github.com/executablebooks/jupyter-book/blob/master/docs/images/logo-wide.svg?raw=true" src="https://github.com/executablebooks/jupyter-book/blob/master/docs/images/logo-wide.svg?raw=true" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2021-06-5-release-jb-v0.11.1/"/>
+    <summary>This is an experimental post to try solving two problems with one blog post.
+We often send out a flurry of tweets to talk about a new release in the Executable Books stack.
+We’d also like to blog about releases more often so it’s easier to track major updates.
+This post is an attempt at crafting a blog post entirely made out of tweets!We’re pleased to announce a new version of Jupyter Book has just been released! You can check out the CHANGELOG here: https://jupyterbook.org/reference/_changelog.html#v0-11-0</summary>
+    <published>2021-06-05T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2020-08-07-announce-book/</id>
+    <title>Announcing the new Jupyter Book</title>
+    <updated>2020-08-07T00:00:00+02:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;em&gt;Note: this announcement is cross-posted between the &lt;a class="reference external" href="https://blog.jupyter.org"&gt;Jupyter Blog&lt;/a&gt; and the &lt;a class="reference external" href="https://executablebooks.org/en/latest/blog"&gt;Executable Book Project updates blog&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Jupyter Book is an open source project for building beautiful, publication-quality books, websites, and documents from source material that contains computational content. With this post, we’re happy to announce that Jupyter Book has been re-written from the ground up, making it easier to install, faster to use, and able to create more complex publishing content in your books. It is now supported by &lt;a class="reference external" href="https://executablebooks.org/en/latest/"&gt;the Executable Book Project&lt;/a&gt;, an open community that builds open source tools for interactive and executable documents in the Jupyter ecosystem and beyond.&lt;/p&gt;
+&lt;img alt="blog/images/jb-ui.png" src="blog/images/jb-ui.png" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2020-08-07-announce-book/"/>
+    <summary>Note: this announcement is cross-posted between the Jupyter Blog and the Executable Book Project updates blogJupyter Book is an open source project for building beautiful, publication-quality books, websites, and documents from source material that contains computational content. With this post, we’re happy to announce that Jupyter Book has been re-written from the ground up, making it easier to install, faster to use, and able to create more complex publishing content in your books. It is now supported by the Executable Book Project, an open community that builds open source tools for interactive and executable documents in the Jupyter ecosystem and beyond.</summary>
+    <published>2020-08-07T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2020-02-25-hello-world/</id>
+    <title>Hello world</title>
+    <updated>2020-02-25T00:00:00+01:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Over the last several years, Jupyter Notebooks have become a staple in the
+data scientist’s toolkit. As both an interface for interactive computation
+and a document standard for structuring blocks of computational and narrative
+content, notebooks are ubiquitous, flexible, and powerful.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2020-02-25-hello-world/"/>
+    <summary>Over the last several years, Jupyter Notebooks have become a staple in the
+data scientist’s toolkit. As both an interface for interactive computation
+and a document standard for structuring blocks of computational and narrative
+content, notebooks are ubiquitous, flexible, and powerful.</summary>
+    <published>2020-02-25T00:00:00+01:00</published>
+  </entry>
+</feed>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog - Posted in 2020</title>
+  <updated>2025-03-17T20:34:14.447796+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/2020/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2020-08-07-announce-book/</id>
+    <title>Announcing the new Jupyter Book</title>
+    <updated>2020-08-07T00:00:00+02:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;em&gt;Note: this announcement is cross-posted between the &lt;a class="reference external" href="https://blog.jupyter.org"&gt;Jupyter Blog&lt;/a&gt; and the &lt;a class="reference external" href="https://executablebooks.org/en/latest/blog"&gt;Executable Book Project updates blog&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Jupyter Book is an open source project for building beautiful, publication-quality books, websites, and documents from source material that contains computational content. With this post, we’re happy to announce that Jupyter Book has been re-written from the ground up, making it easier to install, faster to use, and able to create more complex publishing content in your books. It is now supported by &lt;a class="reference external" href="https://executablebooks.org/en/latest/"&gt;the Executable Book Project&lt;/a&gt;, an open community that builds open source tools for interactive and executable documents in the Jupyter ecosystem and beyond.&lt;/p&gt;
+&lt;img alt="blog/images/jb-ui.png" src="blog/images/jb-ui.png" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2020-08-07-announce-book/"/>
+    <summary>Note: this announcement is cross-posted between the Jupyter Blog and the Executable Book Project updates blogJupyter Book is an open source project for building beautiful, publication-quality books, websites, and documents from source material that contains computational content. With this post, we’re happy to announce that Jupyter Book has been re-written from the ground up, making it easier to install, faster to use, and able to create more complex publishing content in your books. It is now supported by the Executable Book Project, an open community that builds open source tools for interactive and executable documents in the Jupyter ecosystem and beyond.</summary>
+    <published>2020-08-07T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2020-02-25-hello-world/</id>
+    <title>Hello world</title>
+    <updated>2020-02-25T00:00:00+01:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Over the last several years, Jupyter Notebooks have become a staple in the
+data scientist’s toolkit. As both an interface for interactive computation
+and a document standard for structuring blocks of computational and narrative
+content, notebooks are ubiquitous, flexible, and powerful.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2020-02-25-hello-world/"/>
+    <summary>Over the last several years, Jupyter Notebooks have become a staple in the
+data scientist’s toolkit. As both an interface for interactive computation
+and a document standard for structuring blocks of computational and narrative
+content, notebooks are ubiquitous, flexible, and powerful.</summary>
+    <published>2020-02-25T00:00:00+01:00</published>
+  </entry>
+</feed>

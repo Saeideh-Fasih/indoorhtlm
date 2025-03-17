@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://executablebooks.org/en/latest/blog/2023-02-09-announce-mystjs/" />
+<meta property="og:site_name" content="Executable Book Project" />
+<meta property="og:description" content="MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives. It was created for Jupyter Book, and has gained wide adoption..." />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="https://executablebooks.org/en/latest/None" />
+<meta property="og:image:alt" content="MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives. It was created for Ju..." />
+<meta name="description" content="MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives. It was created for Jupyter Book, and has gained wide adoption..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+    <title>Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=32417344" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=55b5f74b"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'blog/2023-02-09-announce-mystjs';</script>
+    <link rel="icon" href="../../_static/logo-square.png"/>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Executable Books Blog"
+/>
+  
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search/"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo-wide.svg" class="logo__image only-light" alt=" - Home"/>
+    <script>document.write(`<img src="../../_static/logo-wide.svg" class="logo__image only-dark" alt=" - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Our tools and standards</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tools/">Ecosystem of tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../feature-vote/">Feature voting board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gallery/">Gallery of Jupyter Books</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About our team</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/">Contribute to this project</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://compass.executablebooks.org">Team compass 🧭</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../">Blog posts</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/meta" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/meta/edit/main/docs/blog/2023-02-09-announce-mystjs.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/meta/issues/new?title=Issue%20on%20page%20%2Fblog/2023-02-09-announce-mystjs.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/blog/2023-02-09-announce-mystjs.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst-markdown">What is MyST Markdown?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bringing-myst-to-javascript-with-a-new-partnership">Bringing MyST to JavaScript with a new partnership</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-is-now-a-top-level-project-in-executable-books">MyST is now a top-level project in Executable Books</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-will-have-first-class-support-in-javascript">MyST will have first-class support in JavaScript</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-will-have-a-jupyterlab-extension">MyST will have a JupyterLab extension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-will-have-an-implementation-agnostic-specification">MyST will have an implementation-agnostic specification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-js-will-complement-jupyter-book-and-focus-on-articles">MyST-JS will complement Jupyter Book and focus on articles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formalizing-organizational-structure-for-the-executable-books-project">Formalizing organizational structure for the Executable Books project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-involved">Get involved</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                   <section id="announcing-myst-js-bringing-myst-to-javascript-and-jupyter">
+<h1>Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter<a class="headerlink" href="#announcing-myst-js-bringing-myst-to-javascript-and-jupyter" title="Link to this heading">#</a></h1>
+<p>MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives.
+It was created for <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, and has gained wide adoption in Python’s <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/sphinx/intro.html">Sphinx documentation ecosystem</a>.</p>
+<p>Over the years we have come to believe that MyST has the right technical and social foundation to serve as a truly community-driven, cross-platform standard for authoring scientific content.
+In this post, we’re happy to announce <strong>MyST Markdown as a standalone project and standard from the Executable Books community</strong>.</p>
+<p>The rest of this post provides ideas on where this project is heading and fleshes out some details.
+We are still exploring what is possible, and would love feedback about what you’re excited about.</p>
+<div class="tip admonition">
+<p class="admonition-title">Learn more and get involved with MyST</p>
+<ul class="simple">
+<li><p>See our new website at <a class="reference external" href="https://mystmd.org">mystmd.org</a>.</p></li>
+<li><p>Try the <a class="reference external" href="https://mystmd.org/guide/quickstart">MyST quickstart tutorial</a>.</p></li>
+<li><p>Follow the Twitter handle <a class="reference external" href="https://twitter.com/MystMarkdown">&#64;MystMarkdown</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/executablebooks">Get involved at our GitHub organization</a>.</p></li>
+<li><p><a class="reference external" href="https://compass.executablebooks.org">See the Executable Books team compass</a> for more about out organization.</p></li>
+</ul>
+</div>
+<section id="what-is-myst-markdown">
+<h2>What is MyST Markdown?<a class="headerlink" href="#what-is-myst-markdown" title="Link to this heading">#</a></h2>
+<p>Two years ago, the Executable Books project was awarded a <a class="reference internal" href="../2020-02-25-hello-world/"><span class="doc">grant from the Sloan Foundation</span></a> to build open source tooling for authoring and reading computational narratives.
+We focused our efforts around <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, a tool for writing and sharing computational narratives as websites and PDFs.
+This project was built on the <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx ecosystem</a>, an open source community that is at the foundation of documentation tools with Python.</p>
+<p>MyST, short for <em>Markedly Structured Text</em>, was designed to combine the fluid experience of writing <a class="reference external" href="https://commonmark.org/">Markdown</a> with the programmable extensibility of <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a>.
+We needed these properties in order to meet the needs of Jupyter users in research and scholarly communication.
+From this starting point, MyST was designed with the following goals in mind:</p>
+<ul class="simple">
+<li><p><strong>Be extensible</strong>: We wanted a flavor of markdown that had extensibility built in from the start. This way users could extend its functionality in an intentional and structured way.</p></li>
+<li><p><strong>Be easy to read</strong>: This extra extensibility should come without sacrificing the simplicity and readability of CommonMark markdown syntax.</p></li>
+<li><p><strong>Be semantic and structured</strong>: We believe that the future of scholarly communication involves semantic and well-structured data, and wanted MyST to have a clearly defined specification and underlying data structure that authors and readers could leverage to connect MyST documents with one another.</p></li>
+<li><p><strong>Be community driven</strong>: We believe that standards for scholarly communication require community governance and leadership, rather than being driven by one stakeholder. We framed MyST and the Jupyter Book stack as a collaboration between many organizations and will develop open governance that follows <a class="reference external" href="https://openscholarlyinfrastructure.org/">the principles of open scholarly infrastructure</a>.</p></li>
+</ul>
+<p>The first implementation of MyST was <a class="reference external" href="https://myst-parser.readthedocs.io">the MyST Markdown Python parser</a>, a parser that allows users to take advantage of Sphinx’s powerful <strong>directives</strong> and <strong>roles</strong> syntax in building their documentation.</p>
+<p>Over the years we have seen interest in MyST raise considerably - it allows authors and researchers to express themselves more efficiently than traditional source text languages like LaTeX.
+MyST has also become <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/markdown.html">a staple in the Python documentation ecosystem</a>, and is the backbone of authoring content in <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>.</p>
+</section>
+<section id="bringing-myst-to-javascript-with-a-new-partnership">
+<h2>Bringing MyST to JavaScript with a new partnership<a class="headerlink" href="#bringing-myst-to-javascript-with-a-new-partnership" title="Link to this heading">#</a></h2>
+<p>Because the original parser for MyST is written entirely in Python (and strongly tied to Sphinx), we realized that it would be difficult for the impact of this implementation of MyST to make its way out of the Jupyter Book and Python communities.</p>
+<p>As a result, we’ve been exploring how to <em>extend MyST markdown into JavaScript</em>, with the goal of integrating with new technical ecosystems and communities.
+We believe this will grow the impact of MyST, and allow for new kinds of workflows around computational narratives.
+The project is called <a class="reference external" href="https://mystmd.org/docs/mystjs">MyST-JS</a>.</p>
+<p>To drive this effort forward, we have <a class="reference external" href="https://curvenote.com">partnered with Curvenote</a> to upstream their open-source documentation engine into the Executable Books community.
+This effort is based <a class="reference external" href="https://curvenote.com/docs/cli">on their command line interface</a>, which was designed for building technical documentation and computational narratives with JavaScript.
+It will become the backbone of <strong>MyST-JS</strong>, and moving forward will be maintained by the Executable Books community.
+There is still much to do, but you can preview this work already at <a class="reference external" href="https://mystmd.org/docs/mystjs">js.mystmd.org</a>.</p>
+<p>Here are a few major new steps summarizing this work over the coming months:</p>
+<section id="myst-is-now-a-top-level-project-in-executable-books">
+<h3>MyST is now a top-level project in Executable Books<a class="headerlink" href="#myst-is-now-a-top-level-project-in-executable-books" title="Link to this heading">#</a></h3>
+<p>We’ll treat MyST as another major effort of the Executable Books project, similar to Jupyter Book.
+It will have its own strategy and goals.
+Jupyter Book will remain a consumer of MyST markdown, and it will remain one of many stakeholders in the MyST ecosystem.</p>
+<div class="admonition-a-new-website admonition">
+<p class="admonition-title">A new website!</p>
+<p>We have set up a dedicated site to describe the MyST project at <a class="reference external" href="https://mystmd.org">mystmd.org</a>.</p>
+</div>
+</section>
+<section id="myst-will-have-first-class-support-in-javascript">
+<h3>MyST will have first-class support in JavaScript<a class="headerlink" href="#myst-will-have-first-class-support-in-javascript" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://github.com/executablebooks/mystjs">MyST-JS project</a> is written entirely in TypeScript, with the goal of being re-usable across more applications and interfaces.
+It also allows us to leverage the vast ecosystem of JavaScript libraries and frameworks for communication.
+For example, we can use <a class="reference external" href="https://github.com/myst-templates">templating frameworks to export MyST documents to a variety of LaTeX publication formats</a>, and leverage the <a class="reference external" href="https://unifiedjs.com/">unifiedjs project</a> to make MyST documents even more structured and consumable as data.</p>
+<div class="admonition-learn-more admonition">
+<p class="admonition-title">Learn more</p>
+<p>You can find the documentation for MyST JS at <a class="reference external" href="https://mystmd.org/docs/mystjs">js.mystmd.org</a>. You can also find an <a class="reference external" href="https://github.com/executablebooks/meta/issues/838">issue from Rowan discussing major new planned functionality here</a>.</p>
+</div>
+</section>
+<section id="myst-will-have-a-jupyterlab-extension">
+<h3>MyST will have a JupyterLab extension<a class="headerlink" href="#myst-will-have-a-jupyterlab-extension" title="Link to this heading">#</a></h3>
+<p>By bringing MyST into JavaScript, we can integrate it directly with JupyterLab and other web-based Jupyter interfaces.
+For example, the <a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst"><code class="docutils literal notranslate"><span class="pre">jupyterlab-myst</span></code></a> extension brings native MyST rendering into JupyterLab including admonitions, cross-references, and figure numbering using <code class="docutils literal notranslate"><span class="pre">mystjs</span></code> as the document engine.</p>
+<p>By using a single core engine in JavaScript, we can ensure that the live interactive experience in web clients (such as JupyterLab) is identical to the HTML generated for static viewing.
+This goal would be very difficult to reach with a combination of Sphinx and JavaScript separately rendering static and live content.</p>
+<div class="admonition-learn-more admonition">
+<p class="admonition-title">Learn more</p>
+<p>Learn more about the <code class="docutils literal notranslate"><span class="pre">jupyterlab-myst</span></code> project at <a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst"><code class="docutils literal notranslate"><span class="pre">executablebooks/jupyterlab-myst</span></code></a>.</p>
+</div>
+</section>
+<section id="myst-will-have-an-implementation-agnostic-specification">
+<h3>MyST will have an implementation-agnostic specification<a class="headerlink" href="#myst-will-have-an-implementation-agnostic-specification" title="Link to this heading">#</a></h3>
+<p>We are creating a formal definition for MyST at <a class="reference external" href="https://mystmd.org/spec">spec.mystmd.org</a>.
+This will allow us to extend MyST’s syntax through a community-driven enhancement proposal process, and allow implementations of MyST to bring in new syntax as they wish.
+Modifications to this specification will follow a <a class="reference external" href="https://github.com/executablebooks/myst-enhancement-proposals">MyST Enhancement Proposals process</a> (MEPs for short).
+We are still working out the details of how this spec will be structured, and what the process looks like, so please provide feedback if you have ideas for how to build a healthy and inclusive process around the MyST language.</p>
+<div class="admonition-learn-more admonition">
+<p class="admonition-title">Learn more</p>
+<p>The <a class="reference external" href="https://github.com/executablebooks/myst-enhancement-proposals">MyST Enhancement Proposals repository</a> has the latest information about the MEP process and any active MEPs.</p>
+</div>
+</section>
+<section id="myst-js-will-complement-jupyter-book-and-focus-on-articles">
+<h3>MyST-JS will complement Jupyter Book and focus on articles<a class="headerlink" href="#myst-js-will-complement-jupyter-book-and-focus-on-articles" title="Link to this heading">#</a></h3>
+<p>We think that MyST-JS and Jupyter Book will be able to complement one another in the use-cases they focus on.
+The Jupyter Book project (and its Sphinx stack) are focused on building multi-page books and project documentation.
+It will continue to lean heavily into the use-cases that <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> was designed for.
+It also has major functionality that is missing in MyST-JS (for example, full internationalization support and extensions).
+We will continue to improve and maintain this stack (both as individual projects in the Sphinx ecosystem and as the Jupyter Book distribution).</p>
+<p>The MyST-JS project will initially focus its efforts on a slightly different use-case: <strong>scientific publishing usecases</strong>, such as reproducible analyses meant for publication, and integration with publisher workflows like <a class="reference external" href="https://en.wikipedia.org/wiki/Journal_Article_Tag_Suite">JATS</a> and <a class="reference external" href="https://www.latex-project.org/">LaTeX</a>.
+It will likely grow into new kinds of published content as well, and we will see how far the “MyST in JavaScript” experience can get.
+We also hope to see more third-party interfaces and services take advantage of MyST-JS for their own use-cases.</p>
+<p>Over time, we will continue to explore the potential of both of these ecosystems.
+As an implementation-agnostic markdown standard, users should be able to switch back and forth between MyST parsers with low friction.</p>
+</section>
+</section>
+<section id="formalizing-organizational-structure-for-the-executable-books-project">
+<h2>Formalizing organizational structure for the Executable Books project<a class="headerlink" href="#formalizing-organizational-structure-for-the-executable-books-project" title="Link to this heading">#</a></h2>
+<p>Finally, we have begun <a class="reference external" href="https://compass.executablebooks.org/">formally defining the organizational structure and governance</a> of the Executable Books project.
+Our goal is to transition this from a small grant-funded team into a community-driven project that has multiple stakeholders as well as clear pathways for participation and leadership.
+We will continue to refine these organizational practices moving forward, and invite you to join our efforts!
+More on this effort in a subsequent update!</p>
+<div class="admonition-learn-more admonition">
+<p class="admonition-title">Learn more</p>
+<p>See <a class="reference external" href="https://github.com/executablebooks/meta/issues/493">this GitHub issue</a> for a long list of ideas and suggested improvements to make as we formalize our processes and structure.</p>
+</div>
+</section>
+<section id="get-involved">
+<h2>Get involved<a class="headerlink" href="#get-involved" title="Link to this heading">#</a></h2>
+<p>We are incredibly excited about the impact that MyST and Jupyter Book have had, and equally excited about the new things we’ll enable with MyST’s new foray into the JavaScript community. If you are interested in these efforts, or want to share your ideas, <a class="reference external" href="https://github.com/executablebooks/meta/discussions">please reach out</a>. We look forward to what the coming years will bring.</p>
+<div class="tip admonition">
+<p class="admonition-title">Learn more and get involved with MyST</p>
+<ul class="simple">
+<li><p>See our new website at <a class="reference external" href="https://mystmd.org">mystmd.org</a>.</p></li>
+<li><p>Try the <a class="reference external" href="https://mystmd.org/guide/quickstart">MyST quickstart tutorial</a>.</p></li>
+<li><p>Follow the Twitter handle <a class="reference external" href="https://twitter.com/MystMarkdown">&#64;MystMarkdown</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/executablebooks">Get involved at our GitHub organization</a>.</p></li>
+<li><p><a class="reference external" href="https://compass.executablebooks.org">See the Executable Books team compass</a> for more about out organization.</p></li>
+</ul>
+</div>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+     
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+     
+    <a href="../2022-11-16-project-update/">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Executable Books Update (October 2022)</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+     
+    <a href="../2023-03-07-call-for-myst-templates/">
+      <span>Call for MyST Templates for Open Science</span>
+      
+      <i class="fa fa-arrow-circle-right"></i>
+      
+    </a>
+    
+  </span>
+</div>
+  
+</div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst-markdown">What is MyST Markdown?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bringing-myst-to-javascript-with-a-new-partnership">Bringing MyST to JavaScript with a new partnership</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-is-now-a-top-level-project-in-executable-books">MyST is now a top-level project in Executable Books</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-will-have-first-class-support-in-javascript">MyST will have first-class support in JavaScript</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-will-have-a-jupyterlab-extension">MyST will have a JupyterLab extension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-will-have-an-implementation-agnostic-specification">MyST will have an implementation-agnostic specification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-js-will-complement-jupyter-book-and-focus-on-articles">MyST-JS will complement Jupyter Book and focus on articles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formalizing-organizational-structure-for-the-executable-books-project">Formalizing organizational structure for the Executable Books project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-involved">Get involved</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Executable Book Project
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Executable Book Project.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

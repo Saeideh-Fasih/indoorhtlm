@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Executable Books Update (October 2022)" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://executablebooks.org/en/latest/blog/2022-11-16-project-update/" />
+<meta property="og:site_name" content="Executable Book Project" />
+<meta property="og:description" content="This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan Foundation. It shares how the project ha..." />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="https://executablebooks.org/en/latest/None" />
+<meta property="og:image:alt" content="This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan..." />
+<meta name="description" content="This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan Foundation. It shares how the project ha..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+    <title>Executable Books Update (October 2022)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=32417344" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=55b5f74b"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'blog/2022-11-16-project-update';</script>
+    <link rel="icon" href="../../_static/logo-square.png"/>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Executable Books Blog"
+/>
+  
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search/"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo-wide.svg" class="logo__image only-light" alt=" - Home"/>
+    <script>document.write(`<img src="../../_static/logo-wide.svg" class="logo__image only-dark" alt=" - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Our tools and standards</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tools/">Ecosystem of tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../feature-vote/">Feature voting board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gallery/">Gallery of Jupyter Books</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About our team</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/">Contribute to this project</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://compass.executablebooks.org">Team compass 🧭</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../">Blog posts</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/meta" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/meta/edit/main/docs/blog/2022-11-16-project-update.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/meta/issues/new?title=Issue%20on%20page%20%2Fblog/2022-11-16-project-update.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/blog/2022-11-16-project-update.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Executable Books Update (October 2022)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-and-metrics">Goals and Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#progress">Progress</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-1-enhancements-to-existing-os-projects">Metric 1: Enhancements to Existing OS Projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-2-expand-the-functionality-of-jupyter-book">Metric 2: Expand the Functionality of Jupyter Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-3-quantecon-and-caporaso-lap-conversions">Metric 3: QuantEcon and Caporaso Lap Conversions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-4-external-software-contributors">Metric 4: External Software Contributors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-5-adoption-by-additional-authors">Metric 5: Adoption by Additional Authors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#future-of-executable-books-and-next-steps">Future of Executable Books and Next Steps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                   <section id="executable-books-update-october-2022">
+<h1>Executable Books Update (October 2022)<a class="headerlink" href="#executable-books-update-october-2022" title="Link to this heading">#</a></h1>
+<p>This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan Foundation. It shares how the project has been progressing relative to the initial grant success metrics, and concludes with a few comments about the future of Executable Books and our vision for the next 12 months.</p>
+<p>We thank the Alfred P. Sloan Foundation for funding this work.</p>
+<section id="goals-and-metrics">
+<h2>Goals and Metrics<a class="headerlink" href="#goals-and-metrics" title="Link to this heading">#</a></h2>
+<p>The project goal was to “build, enhance and promote a new path to document creation and publishing for next-generation textbooks and lectures.”</p>
+<p>The agreed success metrics were:</p>
+<ol class="arabic simple">
+<li><p>Substantial enhancements to at least 3 existing open source projects
+that will form part of the toolchain.</p></li>
+<li><p>Expand the functionality of Jupyter Book to provide a convenient and
+high quality user interface.</p></li>
+<li><p>At least two lecture series from QuantEcon and at least one text
+from Caporaso Lab that are built entirely from these tools.</p></li>
+<li><p>At least three software contributors by end of grant who are not
+paid by grant funds.</p></li>
+<li><p>Adoption by at least 5 additional authors of computational science
+textbooks / lecture series.</p></li>
+</ol>
+<p>In the next section we discuss progress towards these goals as of September 2022. While <strong>all success metrics have already been met or surpassed</strong>, remaining challenges include community building, sustainability, feature requests and documentation.</p>
+</section>
+<section id="progress">
+<h2>Progress<a class="headerlink" href="#progress" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://executablebooks.org/en/latest/">Executable Book Project</a> (EBP) has developed very rapidly since its inception at the start of 2020. The EBP GitHub organisation now contains more than 75 repositories, which provide major enhancements to the core <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> (JB) infrastructure, as well as many Sphinx-compatible extensions that can be utilized by the broader Sphinx community. The <a class="reference external" href="https://github.com/executablebooks/jupyter-book">jupyter-book</a> package receives over 59,000 downloads a month from <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> (annual growth of 195%) and approximately five thousand downloads a month from <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>. It has collected more than 3,000 GitHub stars. More than 109 individuals have contributed commits to the main branch.</p>
+<p>Jupyter Book has been widely adopted in academia and commercial settings. The <a class="reference external" href="https://executablebooks.org/en/latest/gallery">The Jupyter Book Gallery</a>, discussed below, has contributions from lecturers and researchers in psychology, computer science, economics, econometrics, computational mechanics, machine learning, genome sampling, network science, applied mathematics, epidemiology, history, image processing, computational chemistry, geography, particle physics, finance, thermodynamics and many other fields. The documentation for Google JAX, a package that is surging in popularity, is written with Jupyter Book.</p>
+<p>The <a class="reference external" href="https://github.com/executablebooks/myst-spec">MyST</a> flavor of Markdown, designed and developed by EBP to enable highly expressive scientific authoring, has also gained traction in a number of open source products. MyST is designed to be a multi-tool and multi-platform markup language, with parsing capabilities that facilitate its use in a variety of contexts. <a class="reference external" href="https://github.com/executablebooks/myst-parser">MyST-parser</a> has a Sphinx extension that receives around 30,000 PyPI downloads a day (with  750K downloads last month), and is being widely adopted across the PyData ecosystem.</p>
+<p>Below we provide further details on our progress vis-a-vis each individual success metric.</p>
+<section id="metric-1-enhancements-to-existing-os-projects">
+<h3>Metric 1: Enhancements to Existing OS Projects<a class="headerlink" href="#metric-1-enhancements-to-existing-os-projects" title="Link to this heading">#</a></h3>
+<p>The metric in question is <strong>substantial enhancements to at least 3 existing open source projects that will form part of the toolchain.</strong></p>
+<p>In last year’s interim report we highlighted <em>6 examples of substantial enhancements</em> to existing OS projects contributed by the EBP team.</p>
+<p>Over the past year we have formed deeper partnerships with <a class="reference external" href="https://curvenote.com">Curvenote</a> to accelerate the development of MyST support in javascript which has led to the <a class="reference external" href="https://github.com/executablebooks/mystjs">myst-js</a> project.</p>
+</section>
+<section id="metric-2-expand-the-functionality-of-jupyter-book">
+<h3>Metric 2: Expand the Functionality of Jupyter Book<a class="headerlink" href="#metric-2-expand-the-functionality-of-jupyter-book" title="Link to this heading">#</a></h3>
+<p>The metric in question is <strong>expand the functionality of Jupyter Book to provide a convenient and high quality user interface.</strong></p>
+<p>EBP has made <em>very rapid, wide-ranging progress</em> in this area, building an authoring tool that facilitates open scientific writing in many contexts, as well as publishing high quality outputs in a variety of formats.</p>
+<p>Below we review some of the changes from just the last 12 months.</p>
+<p><strong>Scientific Writing:</strong></p>
+<p>There have been significant contributions to all underlying core projects including major updates to <a class="reference external" href="https://github.com/executablebooks/myst-parser">myst-parser</a> and <a class="reference external" href="https://github.com/executablebooks/myst-nb">myst-nb</a></p>
+<p>The <a class="reference external" href="https://github.com/executablebooks/myst-parser">myst-parser</a> has had three major releases in the past 12 months. On top of bug and ongoing maintenance updates some of the major changes include:</p>
+<ul class="simple">
+<li><p>Support for the latest sphinx v5.</p></li>
+<li><p>Improvements for markdown link resolution in MyST.</p></li>
+<li><p>Bring support for <code class="docutils literal notranslate"><span class="pre">docutils</span></code> so rendering no longer requires sphinx
+which gives greater flexibility in developing rendering options.</p></li>
+</ul>
+<p>The full changelog can be found <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/blob/master/CHANGELOG.md">here</a>.</p>
+<p>The <a class="reference external" href="https://github.com/executablebooks/MyST-NB">myst-nb</a> has also had three major releases in the past 12 months. On top of bug and ongoing maintenance updates some of the major changes include:</p>
+<ul class="simple">
+<li><p>Support for the latest sphinx v4 and v5.</p></li>
+<li><p>Inclusion of multilevel configuration options to enable a hierachy
+of option parsing in a consistent way</p></li>
+<li><p>Adding MIME render plugins for customised rendering options</p></li>
+<li><p>Support for parallel execution</p></li>
+<li><p>and many other improvements</p></li>
+</ul>
+<p>The full changelog can be found <a class="reference external" href="https://github.com/executablebooks/MyST-NB/blob/master/CHANGELOG.md">here</a>.</p>
+<p><strong>Maintainability:</strong></p>
+<p>The <a class="reference external" href="https://github.com/executablebooks/sphinx-book-theme">sphinx-book-theme</a> has been a focal point to refactor in the context of upstream projects in an effort to</p>
+<ul class="simple">
+<li><p>reduce the maintenance burden by refactoring to minimize code
+duplications.</p></li>
+<li><p>embrace a model of inheritence from upstream theme projects that it
+relies on.</p></li>
+<li><p>work towards a user contributed theme writing guide to encourage
+community contributed themes.</p></li>
+</ul>
+<p><strong>Teaching and Education:</strong></p>
+<p>Tools have been updated this year, including <a class="reference external" href="https://github.com/executablebooks/sphinx-exercise">sphinx-exercise</a>, which has been completely re-written to support the addition of <strong>exercise’s</strong> and <strong>solution’s</strong> in books. This extension is also the first to introduce gated syntax to enable code execution within directives. While this <strong>gated syntax</strong> is not officially a MyST feature it will become one of the early MyST Enhancement Proposals (MEP) as we work to improve the Executable Books governance.</p>
+<p><strong>Interactivity:</strong></p>
+<p>The core <a class="reference external" href="https://github.com/executablebooks/thebe">thebe</a> project has been migrated to the executable books organisation. It powers much of the rich interactivity provided by <code class="docutils literal notranslate"><span class="pre">MyBinder</span></code> and the new <code class="docutils literal notranslate"><span class="pre">Jupyterlite</span></code> kernels.</p>
+<p>A up-to-date list of Sphinx extensions can be found <a class="reference external" href="https://github.com/search?q=org%3Aexecutablebooks+sphinx-">on EBP</a>.</p>
+</section>
+<section id="metric-3-quantecon-and-caporaso-lap-conversions">
+<h3>Metric 3: QuantEcon and Caporaso Lap Conversions<a class="headerlink" href="#metric-3-quantecon-and-caporaso-lap-conversions" title="Link to this heading">#</a></h3>
+<p>The metric in question is <em>at least two lecture series from QuantEcon and at least one text from Caporaso Lab that are built entirely from these tools.</em></p>
+<p>This milestone has <strong>been exceeded</strong> as was documented in last years report, and we have continued to advance our work toward this metric this year.</p>
+<p>Caporaso Lab has released another JupyterBook-based text, <a class="reference external" href="https://docs.qiime2.org/jupyterbooks/cancer-microbiome-intervention-tutorial/">QIIME 2 Cancer Microbiome Intervention Tutorial</a>, which was first developed to teach two online bioinformatics workshops, and is now available as a free text for cancer microbiome researchers. This book has a <a class="reference external" href="https://www.youtube.com/playlist?list=PLbVDKwGpb3XmvnTrU40zHRT7NZWWVNUpt">corresponding online video course</a> which was developed with support from the National Cancer Institute, adding value to this project.</p>
+<p>Caporaso Lab has begun work on a JupyterBook-based text, <a class="reference external" href="https://gregcaporaso.github.io/4cscc-ln/intro.html">The Four Corners Science and Computing Club (4CSCC) Lab Notebook</a>. This is being developed as a teacher’s manual for integrating physical scientific computing exercises into pre-college classes based on the Raspberry Pi 400 platform, while the 4CSCC develops a corresponding workshop series. Ultimately the goal is that this will become a standalone resource. This work is funded in part by a Chan-Zuckberg Initiative Diversity, Equity, and Inclusion grant to Professor Caporaso, <em>Engaging Native American Students in Scientific Computing with QIIME 2</em>, a project focused on increasing representation of Native Americans in open source scientific computing.</p>
+<p>Caporaso Lab added a full online video course paralleling Prof. Caporaso’s <em>An Introduction to Applied Bioinformatics</em> (2nd edition). This work was not funded on this project, but adds value to content from Caporaso Lab that was reported last year.</p>
+<p>Caporaso Lab continues to work on integration of JupyterBook into its QIIME 2 Library platform, and finalization of this work is planned for 2023. This will result in 10’s of new JupyterBooks documenting QIIME 2 plugins.</p>
+</section>
+<section id="metric-4-external-software-contributors">
+<h3>Metric 4: External Software Contributors<a class="headerlink" href="#metric-4-external-software-contributors" title="Link to this heading">#</a></h3>
+<p>The metric in question is <strong>at least three software contributors by end of grant who are not paid by grant funds.</strong></p>
+<p>We have received contributions from <em>over 100 individuals</em> outside of the grant-funded group. While most of these are smaller contributions, we continue to believe it is an important starting point to building a healthy community of contributors. Below is a brief summary of the contributors for each project as of today:</p>
+<ol class="arabic simple">
+<li><p>Jupyter Book: <a class="reference external" href="https://github.com/executablebooks/jupyter-book/graphs/contributors">109 contributors</a></p></li>
+<li><p>Sphinx Book Theme: <a class="reference external" href="https://github.com/executablebooks/sphinx-book-theme/graphs/contributors">44 contributors</a></p></li>
+<li><p>MyST Parser: <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/graphs/contributors">32 contributors</a></p></li>
+<li><p>MyST NB: <a class="reference external" href="https://github.com/executablebooks/MyST-NB/graphs/contributors">26 contributors</a></p></li>
+</ol>
+<p>The number of external contributors continues to grow across the executable books projects.</p>
+<p>If you would like to find out more about contributing, please get in touch and
+take a look at our <a class="reference external" href="https://executablebooks.org/en/latest/contributing.html">contributors guide</a></p>
+</section>
+<section id="metric-5-adoption-by-additional-authors">
+<h3>Metric 5: Adoption by Additional Authors<a class="headerlink" href="#metric-5-adoption-by-additional-authors" title="Link to this heading">#</a></h3>
+<p>The metric in question is <strong>adoption by at least 5 additional authors of computational science textbooks / lecture series.</strong></p>
+<p>Jupyter Book has been adopted by a large number of textbook authors across many different academic fields. A sample can be found at <a class="reference external" href="https://executablebooks.org/en/latest/gallery">The Jupyter Book Gallery</a>. This is a community-supported page where people can upload links to their Jupyter Books. As of this writing, there are <em>around 92 books</em> build using JB listed in the gallery.</p>
+</section>
+</section>
+<section id="future-of-executable-books-and-next-steps">
+<h2>Future of Executable Books and Next Steps<a class="headerlink" href="#future-of-executable-books-and-next-steps" title="Link to this heading">#</a></h2>
+<p>Over the next 12 months the Executable Books project will have a focus on the sustainability of the project, including issue reduction and bug resolution and further community engagement and support. We are actively looking to grow external contributers to the project.</p>
+<p>We are also introducing some lightwieght governance structures including a <em>MyST Enhancement Proposal process (MEP)</em> to enable structured and transparent conversations about the future of the MyST syntax. MyST is becoming more widely adopted, with additional parser implementations. The project has worked over the past 12 months to specify MyST in the <a class="reference external" href="https://github.com/executablebooks/myst-spec">myst-spec</a> and an <strong>MEP</strong> process will provide further certainty around how the syntax will evolve.</p>
+<p>Once the <em>MyST Enhancement Process (MEP)</em> is up and running we will update the community through another blog post.</p>
+</section>
+<section id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading">#</a></h2>
+<p>This work could not have been done without the support of the <a class="reference external" href="https://sloan.org">Alfred P. Sloan Foundation</a>.</p>
+<p>Many thanks to the Executable Books organisation members including <a class="reference external" href="https://github.com/AakashGfude">Aakash Choudhury</a>, <a class="reference external" href="https://github.com/choldgraf">Chris Holdgraf</a>, <a class="reference external" href="https://github.com/chrisjsewell">Chris Sewell</a>, <a class="reference external" href="https://github.com/damianavila">Damian Avila</a>, <a class="reference external" href="https://github.com/djungelorm">djungelorm</a>, <a class="reference external" href="https://github.com/fperez">Fernando Perez</a>, <a class="reference external" href="https://github.com/fwkoch">Franklin Koch</a>, <a class="reference external" href="https://github.com/gaige">Gaige B Paulsen</a>, <a class="reference external" href="https://github.com/GaretJax">Jonathan Stoppani</a>, <a class="reference external" href="https://github.com/gregcaporaso">Greg Caporaso</a>, <a class="reference external" href="https://github.com/hukkin">Taneli Hukkinen</a>, <a class="reference external" href="https://github.com/jstac">John Stachurski</a>, <a class="reference external" href="https://github.com/minrk">Min RK</a>, <a class="reference external" href="https://github.com/mmcky">Matt McKay</a>, <a class="reference external" href="https://github.com/najuzilu">Yuna Luzi</a>, <a class="reference external" href="https://github.com/pradyunsg">Pradyun Gedam</a>, <a class="reference external" href="https://github.com/rowanc1">Rowan Cockett</a>, <a class="reference external" href="https://github.com/stevejpurves">Steve Purves</a>, <a class="reference external" href="https://github.com/TomasBeuzen">Tomas Beuzen</a>.</p>
+<p>We would also like to thank <a class="reference external" href="https://github.com/orgs/executablebooks/outside-collaborators">all collaborators of the project</a> and everyone that has made a contribution. Thank You!</p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+     
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+     
+    <a href="../2021-12-18-agu-2021/">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Jupyter Book and MyST at AGU 2021</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+     
+    <a href="../2023-02-09-announce-mystjs/">
+      <span>Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter</span>
+      
+      <i class="fa fa-arrow-circle-right"></i>
+      
+    </a>
+    
+  </span>
+</div>
+  
+</div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-and-metrics">Goals and Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#progress">Progress</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-1-enhancements-to-existing-os-projects">Metric 1: Enhancements to Existing OS Projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-2-expand-the-functionality-of-jupyter-book">Metric 2: Expand the Functionality of Jupyter Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-3-quantecon-and-caporaso-lap-conversions">Metric 3: QuantEcon and Caporaso Lap Conversions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-4-external-software-contributors">Metric 4: External Software Contributors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metric-5-adoption-by-additional-authors">Metric 5: Adoption by Additional Authors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#future-of-executable-books-and-next-steps">Future of Executable Books and Next Steps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Executable Book Project
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Executable Book Project.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

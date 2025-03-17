@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog - Posts by Angus Hollands (Core Team</title>
+  <updated>2025-03-17T20:34:14.354990+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/author/angus-hollands-core-team/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2024-06-14-project-pythia-mystmd/</id>
+    <title>Project Pythia Hackathon: Transitioning from JupyterBook to MyST Markdown</title>
+    <updated>2024-06-14T00:00:00+02:00</updated>
+    <author>
+      <name>Executable Books; 2i2c)</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This last week members of the ExecutableBooks team attended the Pythia Cook-off 2024 hackathon to help support and introduce &lt;a class="reference external" href="https://mystmd.org"&gt;MyST Markdown&lt;/a&gt; as the next generation infrastructure being used for Jupyter Book v2.&lt;/p&gt;
+&lt;p&gt;Project Pythia serves as an education and training hub for the geoscientific Python community, acting as the educational wing of the &lt;a class="reference external" href="https://pangeo.io/"&gt;Pangeo&lt;/a&gt; initiative. It provides an extensive range of Python-centered learning resources that are open-source, community-owned, geoscience-focused, and of exceptional quality. These resources and tutorials or “Cookbooks” offer ways to onboard into the geoscientific Python ecosystem and demonstrate ways to process and understand vast amounts of numerical scientific data using tools that support open, reproducible science, while fostering an inclusive community of practice. The Project Pythia technical stack has been based on Jupyter Book, whose next release is undergoing significant development at the moment through the mystmd project. Members of the MyST team attended the hackathon and helped with onboarding, development of new features, and bug fixes throughout the week. It was an exciting event that showcased the power of the new tools that we aim to capture in this post.&lt;/p&gt;
+&lt;img alt="blog/images/pythia-jb-myst.png" src="blog/images/pythia-jb-myst.png" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2024-06-14-project-pythia-mystmd/"/>
+    <summary>This last week members of the ExecutableBooks team attended the Pythia Cook-off 2024 hackathon to help support and introduce MyST Markdown as the next generation infrastructure being used for Jupyter Book v2.Project Pythia serves as an education and training hub for the geoscientific Python community, acting as the educational wing of the Pangeo initiative. It provides an extensive range of Python-centered learning resources that are open-source, community-owned, geoscience-focused, and of exceptional quality. These resources and tutorials or “Cookbooks” offer ways to onboard into the geoscientific Python ecosystem and demonstrate ways to process and understand vast amounts of numerical scientific data using tools that support open, reproducible science, while fostering an inclusive community of practice. The Project Pythia technical stack has been based on Jupyter Book, whose next release is undergoing significant development at the moment through the mystmd project. Members of the MyST team attended the hackathon and helped with onboarding, development of new features, and bug fixes throughout the week. It was an exciting event that showcased the power of the new tools that we aim to capture in this post.</summary>
+    <published>2024-06-14T00:00:00+02:00</published>
+  </entry>
+</feed>

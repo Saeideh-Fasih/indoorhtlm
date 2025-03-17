@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog - Posts by EBP</title>
+  <updated>2025-03-17T20:34:14.374401+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/author/ebp/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-02-09-announce-mystjs/</id>
+    <title>Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter</title>
+    <updated>2023-02-09T00:00:00+01:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives.
+It was created for &lt;a class="reference external" href="https://jupyterbook.org"&gt;Jupyter Book&lt;/a&gt;, and has gained wide adoption in Python’s &lt;a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/sphinx/intro.html"&gt;Sphinx documentation ecosystem&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-02-09-announce-mystjs/"/>
+    <summary>MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives.
+It was created for Jupyter Book, and has gained wide adoption in Python’s Sphinx documentation ecosystem.</summary>
+    <published>2023-02-09T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2021-06-18-update-toc/</id>
+    <title>Migrate your old Table of Contents to the new TOC structure</title>
+    <updated>2021-06-17T00:00:00+02:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;In Jupyter Book v0.11, we &lt;a class="reference external" href="https://jupyterbook.org/reference/_changelog.html#v0-11-0"&gt;introduced a new Table of Contents&lt;/a&gt; structure.
+The new structure is a bit more rigid and explicit, which should allow for a cleaner mapping of TOC structures onto book structures.
+It also introduces the concept of TOC &lt;strong&gt;formats&lt;/strong&gt;, which allows you to specify different &lt;em&gt;kinds&lt;/em&gt; of documents in the TOC (to start with, Books and Articles).&lt;/p&gt;
+&lt;p&gt;This is a short guide to explain the differences between the old and new Table of Contents structures, to help you update them.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2021-06-18-update-toc/"/>
+    <summary>In Jupyter Book v0.11, we introduced a new Table of Contents structure.
+The new structure is a bit more rigid and explicit, which should allow for a cleaner mapping of TOC structures onto book structures.
+It also introduces the concept of TOC formats, which allows you to specify different kinds of documents in the TOC (to start with, Books and Articles).This is a short guide to explain the differences between the old and new Table of Contents structures, to help you update them.</summary>
+    <published>2021-06-17T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2021-06-5-release-jb-v0.11.1/</id>
+    <title>🚀 RELEASE: Jupyter Book v0.11.1</title>
+    <updated>2021-06-05T00:00:00+02:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This is an experimental post to try solving two problems with one blog post.
+We often send out a flurry of tweets to talk about a new release in the Executable Books stack.
+We’d also like to blog about releases more often so it’s easier to track major updates.
+This post is an attempt at crafting a blog post entirely made out of tweets!&lt;/p&gt;
+&lt;p&gt;We’re pleased to announce a new version of Jupyter Book has just been released! You can check out the CHANGELOG here: &lt;a class="reference external" href="https://jupyterbook.org/reference/_changelog.html#v0-11-0"&gt;https://jupyterbook.org/reference/_changelog.html#v0-11-0&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="https://github.com/executablebooks/jupyter-book/blob/master/docs/images/logo-wide.svg?raw=true" src="https://github.com/executablebooks/jupyter-book/blob/master/docs/images/logo-wide.svg?raw=true" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2021-06-5-release-jb-v0.11.1/"/>
+    <summary>This is an experimental post to try solving two problems with one blog post.
+We often send out a flurry of tweets to talk about a new release in the Executable Books stack.
+We’d also like to blog about releases more often so it’s easier to track major updates.
+This post is an attempt at crafting a blog post entirely made out of tweets!We’re pleased to announce a new version of Jupyter Book has just been released! You can check out the CHANGELOG here: https://jupyterbook.org/reference/_changelog.html#v0-11-0</summary>
+    <published>2021-06-05T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2020-08-07-announce-book/</id>
+    <title>Announcing the new Jupyter Book</title>
+    <updated>2020-08-07T00:00:00+02:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;em&gt;Note: this announcement is cross-posted between the &lt;a class="reference external" href="https://blog.jupyter.org"&gt;Jupyter Blog&lt;/a&gt; and the &lt;a class="reference external" href="https://executablebooks.org/en/latest/blog"&gt;Executable Book Project updates blog&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Jupyter Book is an open source project for building beautiful, publication-quality books, websites, and documents from source material that contains computational content. With this post, we’re happy to announce that Jupyter Book has been re-written from the ground up, making it easier to install, faster to use, and able to create more complex publishing content in your books. It is now supported by &lt;a class="reference external" href="https://executablebooks.org/en/latest/"&gt;the Executable Book Project&lt;/a&gt;, an open community that builds open source tools for interactive and executable documents in the Jupyter ecosystem and beyond.&lt;/p&gt;
+&lt;img alt="blog/images/jb-ui.png" src="blog/images/jb-ui.png" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2020-08-07-announce-book/"/>
+    <summary>Note: this announcement is cross-posted between the Jupyter Blog and the Executable Book Project updates blogJupyter Book is an open source project for building beautiful, publication-quality books, websites, and documents from source material that contains computational content. With this post, we’re happy to announce that Jupyter Book has been re-written from the ground up, making it easier to install, faster to use, and able to create more complex publishing content in your books. It is now supported by the Executable Book Project, an open community that builds open source tools for interactive and executable documents in the Jupyter ecosystem and beyond.</summary>
+    <published>2020-08-07T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2020-02-25-hello-world/</id>
+    <title>Hello world</title>
+    <updated>2020-02-25T00:00:00+01:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Over the last several years, Jupyter Notebooks have become a staple in the
+data scientist’s toolkit. As both an interface for interactive computation
+and a document standard for structuring blocks of computational and narrative
+content, notebooks are ubiquitous, flexible, and powerful.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2020-02-25-hello-world/"/>
+    <summary>Over the last several years, Jupyter Notebooks have become a staple in the
+data scientist’s toolkit. As both an interface for interactive computation
+and a document standard for structuring blocks of computational and narrative
+content, notebooks are ubiquitous, flexible, and powerful.</summary>
+    <published>2020-02-25T00:00:00+01:00</published>
+  </entry>
+</feed>

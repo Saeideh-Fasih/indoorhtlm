@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog - Posts by Steve Purves</title>
+  <updated>2025-03-17T20:34:14.410849+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/author/steve-purves/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/</id>
+    <title>Using MyST Markdown in JupyterLab</title>
+    <updated>2023-06-26T00:00:00+02:00</updated>
+    <author>
+      <name>Steve Purves</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Join the upcoming webinar (5th July 2023 &amp;#64; 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp;amp; Steve from &lt;a class="reference external" href="https://curvenote.com"&gt;Curvenote&lt;/a&gt;, and will be an hour walk-through of using &lt;a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst"&gt;MyST in JupyterLab&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.eventbrite.ca/e/scientific-writing-in-jupyterlab-with-myst-markdown-tickets-666670598707"&gt;Sign up for the webinar&lt;/a&gt; or &lt;a class="reference external" href="https://www.youtube.com/watch?v=F3st8X0L1Ys"&gt;watch the recording on YouTube&lt;/a&gt; after.&lt;/p&gt;
+&lt;img alt="blog/images/jupyterlab-myst.png" src="blog/images/jupyterlab-myst.png" style="width: 100%;" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/"/>
+    <summary>Join the upcoming webinar (5th July 2023 @ 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp; Steve from Curvenote, and will be an hour walk-through of using MyST in JupyterLab.Sign up for the webinar or watch the recording on YouTube after.</summary>
+    <published>2023-06-26T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-03-07-call-for-myst-templates/</id>
+    <title>Call for MyST Templates for Open Science</title>
+    <updated>2023-03-07T00:00:00+01:00</updated>
+    <author>
+      <name>Steve Purves</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Interested in porting your first LaTeX template to a MyST template? Join the upcoming webinar (15th March 2023 &amp;#64; 4pm UTC) and get started (and maybe finished) building your template during the session.&lt;/p&gt;
+&lt;p&gt;The webinar is hosted by Rowan &amp;amp; Steve from Curvenote, and will be a 2 hour walk-through at an easy pace of how to markup an existing LaTeX template or document for use with the &lt;a class="reference external" href="https://mystmd.org"&gt;MyST Markdown&lt;/a&gt; CLI.&lt;/p&gt;
+&lt;img alt="blog/images/myst-export-to-any-template.png" src="blog/images/myst-export-to-any-template.png" style="width: 100%;" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-03-07-call-for-myst-templates/"/>
+    <summary>Interested in porting your first LaTeX template to a MyST template? Join the upcoming webinar (15th March 2023 @ 4pm UTC) and get started (and maybe finished) building your template during the session.The webinar is hosted by Rowan &amp; Steve from Curvenote, and will be a 2 hour walk-through at an easy pace of how to markup an existing LaTeX template or document for use with the MyST Markdown CLI.</summary>
+    <published>2023-03-07T00:00:00+01:00</published>
+  </entry>
+</feed>

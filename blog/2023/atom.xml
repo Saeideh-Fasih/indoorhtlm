@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog - Posted in 2023</title>
+  <updated>2025-03-17T20:34:14.424907+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/2023/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2023/new-project-members/</id>
+    <title>Expanding our team and the next phase of Executable Books development</title>
+    <updated>2023-11-28T00:00:00+01:00</updated>
+    <author>
+      <name>Chris Holdgraf</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Over the past three years, the Executable Books team has focused its efforts on building a Sphinx-based technical stack underlying the Jupyter Book project. This has been extremely successful, and Jupyter Book and the associated MyST ecosystem in Sphinx have gained adoption across both scientific and open source communities. The MyST Parser for Sphinx averages around 350,000 downloads a month, which makes up about 13% of all Sphinx downloads (&lt;a class="reference external" href="https://www.pepy.tech/projects/myst-parser?versions=*"&gt;https://www.pepy.tech/projects/myst-parser?versions=*&lt;/a&gt;). There are over 4000 Jupyter Books in public GitHub repositories (&lt;a class="reference external" href="https://github.com/search?q=%22format%3A+jb-book%22&amp;amp;amp;type=code"&gt;https://github.com/search?q=%22format%3A+jb-book%22&amp;amp;type=code&lt;/a&gt;), many of which are now featured at &lt;a class="reference external" href="https://executablebooks.org/en/latest/gallery/"&gt;gallery.executablebooks.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Stargazer counts over time for Jupyter Book and MyST Parser" src="blog/images/grant-star-timeline.png" /&gt;&lt;/p&gt;
+&lt;img alt="Stargazer counts over time for Jupyter Book and MyST Parser" src="blog/images/grant-star-timeline.png" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023/new-project-members/"/>
+    <summary>Over the past three years, the Executable Books team has focused its efforts on building a Sphinx-based technical stack underlying the Jupyter Book project. This has been extremely successful, and Jupyter Book and the associated MyST ecosystem in Sphinx have gained adoption across both scientific and open source communities. The MyST Parser for Sphinx averages around 350,000 downloads a month, which makes up about 13% of all Sphinx downloads (https://www.pepy.tech/projects/myst-parser?versions=*). There are over 4000 Jupyter Books in public GitHub repositories (https://github.com/search?q=%22format%3A+jb-book%22&amp;type=code), many of which are now featured at gallery.executablebooks.org.Stargazer counts over time for Jupyter Book and MyST ParserStargazer counts over time for Jupyter Book and MyST Parser</summary>
+    <published>2023-11-28T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/</id>
+    <title>Using MyST Markdown in JupyterLab</title>
+    <updated>2023-06-26T00:00:00+02:00</updated>
+    <author>
+      <name>Steve Purves</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Join the upcoming webinar (5th July 2023 &amp;#64; 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp;amp; Steve from &lt;a class="reference external" href="https://curvenote.com"&gt;Curvenote&lt;/a&gt;, and will be an hour walk-through of using &lt;a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst"&gt;MyST in JupyterLab&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.eventbrite.ca/e/scientific-writing-in-jupyterlab-with-myst-markdown-tickets-666670598707"&gt;Sign up for the webinar&lt;/a&gt; or &lt;a class="reference external" href="https://www.youtube.com/watch?v=F3st8X0L1Ys"&gt;watch the recording on YouTube&lt;/a&gt; after.&lt;/p&gt;
+&lt;img alt="blog/images/jupyterlab-myst.png" src="blog/images/jupyterlab-myst.png" style="width: 100%;" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/"/>
+    <summary>Join the upcoming webinar (5th July 2023 @ 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp; Steve from Curvenote, and will be an hour walk-through of using MyST in JupyterLab.Sign up for the webinar or watch the recording on YouTube after.</summary>
+    <published>2023-06-26T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-03-07-call-for-myst-templates/</id>
+    <title>Call for MyST Templates for Open Science</title>
+    <updated>2023-03-07T00:00:00+01:00</updated>
+    <author>
+      <name>Steve Purves</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Interested in porting your first LaTeX template to a MyST template? Join the upcoming webinar (15th March 2023 &amp;#64; 4pm UTC) and get started (and maybe finished) building your template during the session.&lt;/p&gt;
+&lt;p&gt;The webinar is hosted by Rowan &amp;amp; Steve from Curvenote, and will be a 2 hour walk-through at an easy pace of how to markup an existing LaTeX template or document for use with the &lt;a class="reference external" href="https://mystmd.org"&gt;MyST Markdown&lt;/a&gt; CLI.&lt;/p&gt;
+&lt;img alt="blog/images/myst-export-to-any-template.png" src="blog/images/myst-export-to-any-template.png" style="width: 100%;" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-03-07-call-for-myst-templates/"/>
+    <summary>Interested in porting your first LaTeX template to a MyST template? Join the upcoming webinar (15th March 2023 @ 4pm UTC) and get started (and maybe finished) building your template during the session.The webinar is hosted by Rowan &amp; Steve from Curvenote, and will be a 2 hour walk-through at an easy pace of how to markup an existing LaTeX template or document for use with the MyST Markdown CLI.</summary>
+    <published>2023-03-07T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-02-09-announce-mystjs/</id>
+    <title>Announcing MyST-JS: Bringing MyST to JavaScript and Jupyter</title>
+    <updated>2023-02-09T00:00:00+01:00</updated>
+    <author>
+      <name>EBP</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives.
+It was created for &lt;a class="reference external" href="https://jupyterbook.org"&gt;Jupyter Book&lt;/a&gt;, and has gained wide adoption in Python’s &lt;a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/sphinx/intro.html"&gt;Sphinx documentation ecosystem&lt;/a&gt;.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-02-09-announce-mystjs/"/>
+    <summary>MyST Markdown is an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives.
+It was created for Jupyter Book, and has gained wide adoption in Python’s Sphinx documentation ecosystem.</summary>
+    <published>2023-02-09T00:00:00+01:00</published>
+  </entry>
+</feed>

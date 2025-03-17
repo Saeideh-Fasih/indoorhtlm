@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog - Posted in 2022</title>
+  <updated>2025-03-17T20:34:14.436651+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/2022/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2022-11-16-project-update/</id>
+    <title>Executable Books Update (October 2022)</title>
+    <updated>2022-11-16T00:00:00+01:00</updated>
+    <author>
+      <name>Matt McKay</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan Foundation. It shares how the project has been progressing relative to the initial grant success metrics, and concludes with a few comments about the future of Executable Books and our vision for the next 12 months.&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2022-11-16-project-update/"/>
+    <summary>This blog post provides an annual update for the Executable Books community. This post is an adaptation of an interim report provided to the Alfred P. Sloan Foundation. It shares how the project has been progressing relative to the initial grant success metrics, and concludes with a few comments about the future of Executable Books and our vision for the next 12 months.</summary>
+    <published>2022-11-16T00:00:00+01:00</published>
+  </entry>
+</feed>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://executablebooks.org</id>
+  <title>Executable Books Blog - Posts by Angus Hollands</title>
+  <updated>2025-03-17T20:34:14.346456+00:00</updated>
+  <link href="https://executablebooks.org"/>
+  <link href="https://executablebooks.org/blog/author/angus-hollands/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
+  <entry>
+    <id>https://executablebooks.org/blog/2024-05-20-jupyter-book-myst/</id>
+    <title>Towards Jupyter Book 2 with MyST-MD</title>
+    <updated>2024-05-19T00:00:00+02:00</updated>
+    <author>
+      <name>Chris Holdgraf</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Over &lt;a class="reference external" href="https://executablebooks.org/en/latest/blog/2020-02-25-hello-world/"&gt;the past four years&lt;/a&gt;, the &lt;a class="reference external" href="https://executablebooks.org"&gt;Executable Book(s)&lt;/a&gt; (EB) project has been working to &lt;em&gt;improve workflows for writing and publishing with Jupyter Notebooks, along with the broader open source science ecosystem.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Within this collaboration, much of the development effort has been spent on building &lt;a class="reference external" href="https://jupyterbook.org/"&gt;Jupyter Book&lt;/a&gt;, &lt;a class="reference external" href="https://executablebooks.org/en/latest/blog/2023/new-project-members/"&gt;which has been a tremendous success&lt;/a&gt;; there are at least 13,209 GitHub repositories using the tool according to the &lt;a class="reference external" href="https://github.com/executablebooks/jupyter-book/network/dependents"&gt;dependency graph for the project&lt;/a&gt;.&lt;a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; Furthermore, the reach of EB has grown to encompass documentation writers and package authors who use EB tools to provide a richer experience for their audiences. For example, six of the flagship scientific python projects&lt;a class="footnote-reference brackets" href="#scipy" id="id2" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;3&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; like &lt;a class="reference external" href="https://numpy.org/doc/stable/"&gt;NumPy&lt;/a&gt;, &lt;a class="reference external" href="https://pandas.pydata.org/docs/"&gt;Pandas&lt;/a&gt;, and &lt;a class="reference external" href="https://docs.dask.org/en/stable/"&gt;Dask&lt;/a&gt; make use of at least one of the Sphinx-based tools we’ve developed such as the &lt;a class="reference external" href="http://pydata-sphinx-theme.readthedocs.io"&gt;PyData Sphinx Theme&lt;/a&gt;, the &lt;a class="reference external" href="http://sphinx-book-theme.readthedocs.io"&gt;Sphinx Book Theme&lt;/a&gt;, &lt;a class="reference external" href="https://myst-parser.readthedocs.io"&gt;MyST Markdown parser&lt;/a&gt;, or the &lt;a class="reference external" href="https://myst-nb.readthedocs.io"&gt;Jupyter Notebook parser&lt;/a&gt;.&lt;a class="footnote-reference brackets" href="#popular" id="id3" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;4&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2024-05-20-jupyter-book-myst/"/>
+    <summary>Over the past four years, the Executable Book(s) (EB) project has been working to improve workflows for writing and publishing with Jupyter Notebooks, along with the broader open source science ecosystem.Within this collaboration, much of the development effort has been spent on building Jupyter Book, which has been a tremendous success; there are at least 13,209 GitHub repositories using the tool according to the dependency graph for the project.1 Furthermore, the reach of EB has grown to encompass documentation writers and package authors who use EB tools to provide a richer experience for their audiences. For example, six of the flagship scientific python projects3 like NumPy, Pandas, and Dask make use of at least one of the Sphinx-based tools we’ve developed such as the PyData Sphinx Theme, the Sphinx Book Theme, MyST Markdown parser, or the Jupyter Notebook parser.4</summary>
+    <published>2024-05-19T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/</id>
+    <title>Using MyST Markdown in JupyterLab</title>
+    <updated>2023-06-26T00:00:00+02:00</updated>
+    <author>
+      <name>Steve Purves</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Join the upcoming webinar (5th July 2023 &amp;#64; 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp;amp; Steve from &lt;a class="reference external" href="https://curvenote.com"&gt;Curvenote&lt;/a&gt;, and will be an hour walk-through of using &lt;a class="reference external" href="https://github.com/executablebooks/jupyterlab-myst"&gt;MyST in JupyterLab&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.eventbrite.ca/e/scientific-writing-in-jupyterlab-with-myst-markdown-tickets-666670598707"&gt;Sign up for the webinar&lt;/a&gt; or &lt;a class="reference external" href="https://www.youtube.com/watch?v=F3st8X0L1Ys"&gt;watch the recording on YouTube&lt;/a&gt; after.&lt;/p&gt;
+&lt;img alt="blog/images/jupyterlab-myst.png" src="blog/images/jupyterlab-myst.png" style="width: 100%;" /&gt;&lt;/p&gt;
+</content>
+    <link href="https://executablebooks.org/blog/2023-06-27-jupyterlab-myst/"/>
+    <summary>Join the upcoming webinar (5th July 2023 @ 3pm UTC) and get started using MyST in JupyterLab and how it connects to other scientific writing workflows. The webinar is hosted by Rowan &amp; Steve from Curvenote, and will be an hour walk-through of using MyST in JupyterLab.Sign up for the webinar or watch the recording on YouTube after.</summary>
+    <published>2023-06-26T00:00:00+02:00</published>
+  </entry>
+</feed>
